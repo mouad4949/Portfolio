@@ -1,8 +1,8 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
-import { MagicButton } from './ui/MagicButton'
 
+import MagicButton from "./ui/MagicButton";
 const Hero = () => {
   return (
     <div className="pb-20 pt-10">
