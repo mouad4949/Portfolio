@@ -5,6 +5,11 @@ import { gridItems } from '@/data'
 function Grid() {
   return (
     <section id="about">
+      <h1 className='heading mb-12'>
+            About {' '}
+            <span className='text-purple'>Me</span>
+
+        </h1>
         <BentoGrid>
            {gridItems.map((item)=>(
             <BentoGridItem

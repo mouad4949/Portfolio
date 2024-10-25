@@ -79,7 +79,13 @@ export function TimelineDemo() {
     
   ];
   return (
+    
     <div className="w-full" id="exp">
+      <h1 className='heading'>
+          Latest Professional {' '}
+            <span className='text-purple'>Experiences</span>
+
+        </h1>
       <Timeline data={data} />
     </div>
   );
