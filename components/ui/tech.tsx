@@ -68,33 +68,34 @@ export const InfiniteMovingImages = ({
 
   return (
     <div
-      ref={containerRef}
-      className={cn(
-        "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-        className
-      )}
-    >
-      <ul
-        ref={scrollerRef}
-        className={cn(
-          "flex min-w-full shrink-0 gap-16 py-24 w-max flex-nowrap", // Increased gap here
-          start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
-        )}
+  ref={containerRef}
+  className={cn(
+    "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+    className
+  )}
+>
+  <ul
+    ref={scrollerRef}
+    className={cn(
+      "flex min-w-full shrink-0 gap-16 py-24 w-max flex-nowrap", // Increased gap here
+      start && "animate-scroll",
+      pauseOnHover && "hover:[animation-play-state:paused]"
+    )}
+  >
+    {items.map((item, idx) => (
+      <li
+        key={idx}
+        className="flex-shrink-0"
       >
-        {items.map((item, idx) => (
-          <li
-            key={idx}
-            className="flex-shrink-0"
-          >
-            <img 
-              src={item.imageUrl} 
-              alt={`Technology ${idx + 1}`} 
-              className="object-cover w-[130px] h-[130px]" // Increased image size
-            />
-          </li>
-        ))}
-      </ul>
-    </div>
+        <img 
+          src={item.imageUrl} 
+          alt={`Technology ${idx + 1}`} 
+          className="object-cover w-[50px] h-[50px] md:w-[130px] md:h-[130px]" // Decreased image size for small devices
+        />
+      </li>
+    ))}
+  </ul>
+</div>
+
   );
 };
