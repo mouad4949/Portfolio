@@ -9,6 +9,7 @@ import Technologies from "@/components/Technologies";
 import Deployment from "@/components/Deployment";
 import { TimelineDemo } from "@/components/Experiences";
 import { Approach } from "@/components/Approach";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <Deployment/>
         <TimelineDemo/>
         <Approach/>
+        <Footer/>
       </div>
     </main>
   );
