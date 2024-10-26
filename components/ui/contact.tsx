@@ -2,30 +2,38 @@
 
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 export default function Contact() {
-  const form = useRef(); // Créer une référence pour le formulaire
+  const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault(); // Empêcher le rechargement de la page lors de l'envoi du formulaire
+    e.preventDefault();
 
-    const userEmail = form.current.user_email.value; // Récupérer l'e-mail de l'utilisateur
-
-    // Remplacer 'your_email@example.com' par ton adresse e-mail
-    const myEmail = 'mouadrguibi900@gmail.com'; 
-
+   
     emailjs
       .sendForm('service_kakk2ob', 'POrtfolio_id23016022', form.current, {
         publicKey: 'bnd0WYIuITlPoZpi5',
-        // Passer les variables personnalisées
-        to_email: myEmail, // Ton adresse e-mail pour recevoir les messages
-        user_email: userEmail // E-mail de l'utilisateur pour référence
+       
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          Swal.fire({
+            title: 'Email envoyé !',
+            text: 'Votre email a été envoyé avec succès.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+          }).then(() => {
+            window.location.reload(); // Recharger la page après avoir cliqué sur "OK"
+          });
         },
         (error) => {
+          Swal.fire({
+            title: 'Erreur',
+            text: 'Échec de l’envoi de l’email, veuillez réessayer.',
+            icon: 'error',
+            confirmButtonText: 'OK'
+          });
           console.log('FAILED...', error.text);
         }
       );
@@ -42,7 +50,7 @@ export default function Contact() {
             <div className="mt-2.5">
               <input
                 id="first-name"
-                name="from_name" // Utilise 'from_name' pour le template
+                name="from_name"
                 type="text"
                 autoComplete="given-name"
                 className="block w-full rounded-md border-none px-3.5 py-2 bg-transparent text-white font-medium placeholder:text-white shadow-sm 
@@ -57,7 +65,7 @@ export default function Contact() {
             <div className="mt-2.5">
               <input
                 id="last-name"
-                name="to_name" // Utilise 'to_name' pour le template
+                name="to_name"
                 type="text"
                 autoComplete="family-name"
                 className="block w-full rounded-md border-none px-3.5 py-2 bg-transparent text-white font-medium placeholder:text-white shadow-sm 
@@ -73,7 +81,7 @@ export default function Contact() {
             <div className="mt-2.5">
               <input
                 id="email"
-                name="user_email" // Assurez-vous que le nom est correct pour le template
+                name="user_email"
                 type="email"
                 autoComplete="email"
                 className="block w-full rounded-md border-none px-3.5 py-2 bg-transparent text-white font-medium placeholder:text-white shadow-sm 
@@ -89,7 +97,7 @@ export default function Contact() {
             <div className="mt-2.5">
               <textarea
                 id="message"
-                name="message" // Assurez-vous que le nom est correct pour le template
+                name="message"
                 rows={4}
                 className="block w-full rounded-md border-none px-3.5 py-2 bg-transparent text-white placeholder:text-gray-400 shadow-sm 
                 ring-[1px] ring-gray-400 focus:ring-[1px] focus:ring-gray-500 transition duration-200 ease-in-out
