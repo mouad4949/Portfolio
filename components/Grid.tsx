@@ -5,7 +5,7 @@ import { gridItems } from '@/data'
 function Grid() {
   return (
     <section id="about">
-      <h1 className='heading my-12'>
+      <h1 className='heading mb-12' style={{ marginTop: '26rem' }}>
             About {' '}
             <span className='text-purple'>Me</span>
 
