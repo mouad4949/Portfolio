@@ -1,6 +1,6 @@
 import React from 'react'
 import { InfiniteMovingImages } from './ui/tech'
-import { dep, tech } from '@/data'
+import { dep} from '@/data'
 
 function Deployment() {
   return (

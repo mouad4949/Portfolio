@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import React from "react";
 import { Timeline } from "@/components/ui/exp";
 
@@ -12,7 +12,7 @@ export function TimelineDemo() {
           I freelanced by creating a SaaS platform for a cafe, enabling efficient management of orders and customer interactions. Additionally, I developed an administrative dashboard that allows for seamless stock management, ensuring that the cafe can monitor inventory levels in real time. 
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-bold mb-8">
-          This dashboard also includes features for processing orders and handling online payments, utilizing PayPal to provide customers with a secure and convenient payment method. This comprehensive solution not only streamlines the cafe's operations but also enhances the overall customer experience.
+          This dashboard also includes features for processing orders and handling online payments, utilizing PayPal to provide customers with a secure and convenient payment method. This comprehensive solution not only streamlines the cafe s operations but also enhances the overall customer experience.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img

@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 "use client";
 import React from "react";
 import { motion } from "framer-motion";

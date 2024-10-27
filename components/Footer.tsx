@@ -1,7 +1,7 @@
 import React from 'react'
 import Contact from './ui/contact'
 import { socialMedia } from '@/data'
-import { div } from 'framer-motion/client'
+
 
 
 
