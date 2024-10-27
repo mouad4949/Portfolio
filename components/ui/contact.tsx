@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
@@ -7,38 +7,41 @@ import MagicButton from './MagicButton';
 import { FaLocationArrow } from 'react-icons/fa';
 
 export default function Contact() {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-   
-    emailjs
-      .sendForm('service_kakk2ob', 'POrtfolio_id23016022', form.current, {
-        publicKey: 'bnd0WYIuITlPoZpi5',
-       
-      })
-      .then(
-        () => {
-          Swal.fire({
-            title: 'Email envoyé !',
-            text: 'Votre email a été envoyé avec succès.',
-            icon: 'success',
-            confirmButtonText: 'OK'
-          }).then(() => {
-            window.location.reload(); // Recharger la page après avoir cliqué sur "OK"
-          });
-        },
-        (error) => {
-          Swal.fire({
-            title: 'Erreur',
-            text: 'Échec de l’envoi de l’email, veuillez réessayer.',
-            icon: 'error',
-            confirmButtonText: 'OK'
-          });
-          console.log('FAILED...', error.text);
-        }
-      );
+    if (form.current) {
+      emailjs
+        .sendForm(
+          'service_kakk2ob',
+          'POrtfolio_id23016022',
+          form.current,
+          'bnd0WYIuITlPoZpi5'
+        )
+        .then(
+          () => {
+            Swal.fire({
+              title: 'Email envoyé !',
+              text: 'Votre email a été envoyé avec succès.',
+              icon: 'success',
+              confirmButtonText: 'OK',
+            }).then(() => {
+              window.location.reload();
+            });
+          },
+          (error) => {
+            Swal.fire({
+              title: 'Erreur',
+              text: 'Échec de l’envoi de l’email, veuillez réessayer.',
+              icon: 'error',
+              confirmButtonText: 'OK',
+            });
+            console.log('FAILED...', error.text);
+          }
+        );
+    }
   };
 
   return (
