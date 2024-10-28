@@ -1,6 +1,6 @@
 import React from 'react'
 import { socialMedia } from '@/data'
-
+import Contact from './ui/contact'
 
 
 
@@ -19,6 +19,9 @@ const Footer = () => {
         </p>
     </div>
 
+    <div className='mt-4 mb-0'>
+        <Contact />
+    </div>
     
     <div className='flex mt-16 md:flex-row flex-col justify-between items-center my-32'>
         <p className='md:text-base text-sm md:font-normal '>Copyright © 2024 MMR</p>
