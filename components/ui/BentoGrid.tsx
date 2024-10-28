@@ -55,7 +55,7 @@ export const BentoGridItem = ({
   const leftLists = ["Spring Boot", "Django", "Laravel"];
   const rightLists = ["React.js", "NextJS", "Angular"];
 
-  const [copied, setCopied] = useState(false);
+  const [copied] = useState(false);
 
   const defaultOptions = {
     loop: copied,
