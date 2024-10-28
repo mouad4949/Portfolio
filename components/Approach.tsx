@@ -4,7 +4,7 @@
 import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { CanvasRevealEffect } from "@/components/ui/CanvasRevealEffect";
+
 
 
 export function Approach() {
@@ -21,10 +21,7 @@ export function Approach() {
         goals, target audience, and key functionalities.We'll discuss things like
         site structure, navigation, and content requirements."
         >
-          <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
-          />
+          
         </Card>
         <Card title="Development & Progress Update" 
         icon={<AceternityIcon 
@@ -32,15 +29,7 @@ export function Approach() {
         description="Once we agree on the plan, I cue my lofi playlist and dive into coding. From
         initial sketches to polished code,I keep you updated every step of the way."
         >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-black"
-            colors={[
-              [236, 72, 153],
-              [232, 121, 249],
-            ]}
-            dotSize={2}
-          />
+          
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
@@ -52,11 +41,7 @@ export function Approach() {
         description="This is where the magic happens! Based on the approved design, I'll translate
         everything into functional code, building your website from the ground up.
         ">
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600"
-            colors={[[125, 211, 252]]}
-          />
+          
         </Card>
       </div>
     </section>
