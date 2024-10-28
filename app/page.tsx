@@ -8,7 +8,7 @@ import { navItems } from "@/data";
 import Technologies from "@/components/Technologies";
 import Deployment from "@/components/Deployment";
 import { TimelineDemo } from "@/components/Experiences";
-import { Approach } from "@/components/Approach";
+
 
 
 
@@ -23,7 +23,7 @@ export default function Home() {
         <Technologies/> 
         <Deployment/>
         <TimelineDemo/>
-        <Approach/>
+        
         
       </div>
     </main>
