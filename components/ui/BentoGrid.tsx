@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-
+import GridGlobe from "./GridGlobe";
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
 
@@ -136,7 +136,7 @@ export const BentoGridItem = ({
 
           {/* for the github 3d globe */}
           
-
+          {id === 2 && <GridGlobe />}
           {/* Tech stack list div */}
           {id === 3 && (
   <div className="flex justify-end h-full w-full absolute right-0 top-0">
