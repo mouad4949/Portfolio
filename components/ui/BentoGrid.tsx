@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
+
 
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 
 import { BackgroundGradientAnimation } from "./GradientBg";
 import animationData from "@/data/confetti.json";
-import MagicButton from "./MagicButton";
+
 
 export const BentoGrid = ({
   className,
@@ -66,11 +66,7 @@ export const BentoGridItem = ({
     },
   };
 
-  const handleCopy = () => {
-    const text = "mouadrguibi900@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-  };
+  
 
   return (
     <div
@@ -181,13 +177,7 @@ export const BentoGridItem = ({
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
-              <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              />
+              
             </div>
           )}
         </div>
