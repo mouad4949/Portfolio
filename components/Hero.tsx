@@ -1,7 +1,7 @@
 import React from 'react';
 import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
-
+import MagicButton from "./ui/MagicButton";
 
 const Hero = () => {
   return (
@@ -27,7 +27,9 @@ const Hero = () => {
               Passionate about technology and innovation, I&apos;m Mouad Rguibi, a software engineering student
               from Morocco. Ready to bring ideas to life through code.
             </p>
-            
+            <a href="/Rguibi.pdf" download>
+              <MagicButton title="Download My Resume" position="center" />
+            </a>
           </div>
 
           {/* Right side: Photo (Full width on mobile, 33% on desktop) */}
