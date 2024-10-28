@@ -2,7 +2,7 @@
 
 "use client";
 import {
-  useMotionValueEvent,
+  useMotionValue,
   useScroll,
   useTransform,
   motion,
