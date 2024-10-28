@@ -3,6 +3,11 @@ import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import MagicButton from "./ui/MagicButton";
 
+
+const handleClick = () => {
+  console.log("Button clicked!");
+};
+
 const Hero = () => {
   return (
     <div className="pb-20 pt-10 relative">
@@ -28,7 +33,7 @@ const Hero = () => {
               from Morocco. Ready to bring ideas to life through code.
             </p>
             <a href="/Rguibi.pdf" download>
-              <MagicButton title="Download My Resume" position="center" />
+              <MagicButton title="Download My Resume" position="right" handleClick={handleClick}/>
             </a>
           </div>
 
