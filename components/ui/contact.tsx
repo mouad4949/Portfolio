@@ -4,7 +4,8 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
-
+import MagicButton from './MagicButton';
+import { FaLocationArrow } from 'react-icons/fa';
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -115,7 +116,11 @@ export default function Contact() {
 
         <div className="mt-6">
           
-          
+        <MagicButton
+          title="let's get in touch"
+          icon={<FaLocationArrow/>}
+          position="right"
+          />
         </div>
       </form>
     </div>
