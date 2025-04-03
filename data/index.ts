@@ -72,6 +72,22 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
+      title: "Fintech Platform",
+      des: "Led DevOps for a FinTech platform, managing CI/CD, AWS, and Kubernetes to deploy secure microservices with Kafka.",
+      img: "/asmas.png",
+      iconLists: ["/kubernetes.svg", "/aws.svg", "/terraform.svg","/jenkins.svg","/dock.svg"],
+      link: "https://github.com/projet-fintech",
+    },
+    {
+      id: 2,
+      title: "Oracle Database Administration App",
+      des: "Built a Spring Boot&React app for OracleDB management with TDE, VPD, RMAN, and performance tuning.",
+      img: "/oracleDB.jpg",
+      iconLists: ["/oracle.svg","/plsql.svg","/spring.svg", "/react.svg"],
+      link: "https://github.com/mouad4949/Oracle-Admin-WEB-PROJECT",
+    },
+    {
+      id: 3,
       title: "Bank Management Web Application",
       des: "Developed a bank management app for accounts, transactions, and clients using React and Spring Boot.",
       img: "/Bank.jpeg",
@@ -79,7 +95,7 @@ export const navItems = [
       link: "https://github.com/mouad4949/Bank_LSI",
     },
     {
-      id: 2,
+      id: 4,
       title: "Online Booking System for Aeroclub",
       des: "Developed a platform for booking discovery and initiation flights, with automated pricing and secure payment integration.",
       img: "/aeroclub.jpeg",
@@ -87,7 +103,7 @@ export const navItems = [
       link: "https://github.com/mouad4949/Aeroclub_siteweb",
     },
     {
-      id: 3,
+      id: 5,
       title: "Lendys Café SaaS Management System",
       des: "Developed and sold a SaaS platform for managing reservations, orders, and payments at Lendys Café.",
       img: "/lendys.png",
@@ -95,7 +111,7 @@ export const navItems = [
       link: "https://lendys.ma/",
     },
     {
-      id: 4,
+      id: 6,
       title: "E-commerce Platform with PayPal Integration",
       des: "A Symfony-based e-commerce solution featuring seamless PayPal payment integration for a smooth shopping experience.",
       img: "/ecomm.png",
@@ -103,7 +119,7 @@ export const navItems = [
       link: "https://github.com/mouad4949/Ecommerce_WebSite",
     },
     {
-      id: 5,
+      id: 7,
       title: "2D Video Game with Pathfinding",
       des: "A 2D Unity game featuring advanced pathfinding mechanics for dynamic character movement and AI navigation.",
       img: "/game.png",
@@ -111,7 +127,7 @@ export const navItems = [
       link: "https://github.com/mouad4949/Game-DataStructers-",
     },
     {
-      id: 6,
+      id: 8,
       title: "Hotel Management System",
       des: "A web app for managing hotel bookings, billing, and guest services efficiently.",
       img: "/hotel.png",
@@ -119,7 +135,7 @@ export const navItems = [
       link: "https://github.com/mouad4949/Gestion-d-hotel",
     },
     {
-      id: 7,
+      id: 9,
       title: " Gaming Club Management System",
       des: "A web app for managing gaming club memberships, events, and player profiles efficiently.",
       img: "/gaming.png",
@@ -164,6 +180,21 @@ export const navItems = [
   ];
   
   export const dep = [
+    {
+      imageUrl:"kubernetes.svg",
+    },
+    {
+      imageUrl:"aws.svg",
+    },
+    {
+      imageUrl:"terraform.svg",
+    },
+    {
+      imageUrl:"jenkins.svg",
+    },
+    {
+      imageUrl:"ansible.svg",
+    },
     {
       imageUrl:"docker.svg",
     },

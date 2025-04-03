@@ -14,7 +14,7 @@ function Technologies() {
           <InfiniteMovingImages
               items={tech}
               direction="right"
-              speed="slow"
+              speed="normal"
           />
      </div>
     </div>

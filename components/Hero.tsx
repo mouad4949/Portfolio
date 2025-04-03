@@ -24,7 +24,7 @@ const Hero = () => {
               words="Hello! I'm a Software Engineering Student"
             />
             <p className="text-center md:text-left text-base sm:text-lg md:text-xl lg:text-2xl md:tracking-wider mb-4">
-              Passionate about technology and innovation, I&apos;m Mouad Rguibi, a software engineering student
+              Passionate about technology and innovation, I&apos;m Mouad Rguibi, a software and Devops engineer student
               from Morocco. Ready to bring ideas to life through code.
             </p>
             <a href="/Rguibi.pdf" download>

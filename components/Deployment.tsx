@@ -14,7 +14,7 @@ function Deployment() {
           <InfiniteMovingImages
               items={dep}
               direction="left"
-              speed="slow"
+              speed="normal"
           />
      </div>
     </div>
