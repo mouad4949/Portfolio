@@ -21,25 +21,27 @@ const Hero = () => {
           <div className="w-full md:w-2/3 flex flex-col items-center md:items-start justify-center space-y-4 px-4 md:px-0">
             <TextGenerateEffect
               className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-center md:text-left"
-              words="Hello! I'm a Software Engineering Student"
+              words="Hello! I'm a Software Engineer"
             />
             <p className="text-center md:text-left text-base sm:text-lg md:text-xl lg:text-2xl md:tracking-wider mb-4">
-              Passionate about technology and innovation, I&apos;m Mouad Rguibi, a software and Devops engineer student
+              Passionate about technology and innovation, I&apos;m Mouad Rguibi, a software and 
+              Devops&Cloud engineer 
               from Morocco. Ready to bring ideas to life through code.
             </p>
-            <a href="/Rguibi.pdf" download>
+            <a href="/CV.pdf" download>
               <MagicButton title="Download My Resume" position="center" />
             </a>
           </div>
 
           {/* Right side: Photo (Full width on mobile, 33% on desktop) */}
           <div className="w-full md:w-1/3 flex justify-center md:justify-end mt-6 md:mt-0">
-            <img 
-              src="/port.jpg" 
-              alt="Mouad Rguibi" 
-              className="w-42 h-42 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-2xl shadow-lg object-cover"
-            />
+                <img 
+                  src="/PDP.jpeg" 
+                  alt="Mouad Rguibi" 
+                  className="w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-2xl shadow-lg object-cover"
+                />
           </div>
+
         </div>
       </div>
     </div>
